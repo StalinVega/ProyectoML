@@ -14,8 +14,8 @@
                 $("#formulario_rl").toggle();
             });
 
-             $("#nb").click(function() {
-                $("#formulario_nb").toggle();
+             $("#rf").click(function() {
+                $("#formulario_rf").toggle();
             });
         });
     </script>
@@ -51,11 +51,11 @@ background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, F
     </div>
     <div class="col-sm">
       <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="https://hackr.io/blog/top-steps-to-learn-naive-bayes-algorithm/thumbnail/large" alt="Card image cap">
+  <img class="card-img-top" src="https://lh5.googleusercontent.com/Bz91bUYOV4a7VOMrznXib-NfJHClnXuLtNi3u71xhT8TgaFG2QZNbLqPjOUaUH0m-sXzWPC27dBIrM3FVt7n7W15nrPXgS1SBH0pmc79UUMyzHoc2WDszfAlQzxMfWNWTEjYa2A" alt="Card image cap">
   <div class="card-body">
-    <h5 class="card-title">Naive Bayes</h5>
-    <p class="card-text">Se basa en una técnica de clasificación estadística llamada “teorema de Bayes”</p>
-    <button type="button" class="btn btn-primary" id="nb">Empezar</button>
+    <h5 class="card-title">Random Forest</h5>
+    <p class="card-text">un método de aprendizaje conjunto para clasificación , regresión y otras tareas que operan mediante la construcción de una multitud de árboles de decisión en el momento del entrenamiento y la salida de la clase que es el modo de las clases (clasificación) </p>
+    <button type="button" class="btn btn-primary" id="rf">Empezar</button>
   </div>
 </div>
     </div>
@@ -67,8 +67,8 @@ background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, F
 <div id="formulario_rl" style="display: none;">
     <form action="/regresion" style="text-align: center;">
         <div class="form-group">
-            <input type="number" name="sepal_length" placeholder="sepal length (cm)" min="0" step="0.1" required>
-            <input type="number" name="sepal_width" placeholder="sepal width (cm)" min="0" step="0.1" required>
+            <input type="number" name="max" placeholder="max"  required>
+            <input type="number" name="min" placeholder="min" required>
         </div>
         <div class="form-group">
             <button type="submit" class="btn btn-primary">Clasificar</button>
@@ -77,11 +77,11 @@ background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, F
 </div>
 
 <br>
-<div id="formulario_nb" style="display: none;">
-    <form action="/naveBayes" style="text-align: center;">
+<div id="formulario_rf" style="display: none;">
+    <form action="/randonF" method="POST" style="text-align: center;">
         <div class="form-group">
-            <input type="number" name="sepal_length" placeholder="sepal length (cm)" min="0" step="0.1" required>
-            <input type="number" name="sepal_width" placeholder="sepal width (cm)" min="0" step="0.1" required>
+            <input  name="max1" placeholder="max"  required>
+            <input name="min1" placeholder="min" required>
         </div>
         <div class="form-group">
             <button type="submit" class="btn btn-primary">Clasificar</button>
