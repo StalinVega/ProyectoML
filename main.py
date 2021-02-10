@@ -49,5 +49,15 @@ def index():
     return render_template("index.html")
 
 
+@app.route('/naveBayes')
+def nb():
+    return render_template("nb.html")
+
+
+@app.route('/regresion')
+def reglog():
+    return render_template("regresionL.html")
+
+
 if __name__ == '__main__':
     app.run(port=5000,debug=True)
