@@ -65,10 +65,10 @@ background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, F
 
 <br>
 <div id="formulario_rl" style="display: none;">
-    <form action="/regresion" style="text-align: center;">
+    <form action="/regresion" method="POST" style="text-align: center;">
         <div class="form-group">
-            <input type="number" name="max" placeholder="max"  required>
-            <input type="number" name="min" placeholder="min" required>
+            <input name="max" placeholder="max"  required>
+            <input name="min" placeholder="min" required>
         </div>
         <div class="form-group">
             <button type="submit" class="btn btn-primary">Clasificar</button>
